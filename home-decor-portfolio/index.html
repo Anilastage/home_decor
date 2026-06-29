@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Decor Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Interior<span>Studio</span></a>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <span class="hero-tag animate-in">Interior Design Studio</span>
+      <h1 class="hero-title animate-in">Where Space<br>Meets <span>Serenity</span></h1>
+      <p class="hero-desc animate-in">We craft minimalist interiors that transform houses into harmonious homes. Every detail tells a story of elegance and simplicity.</p>
+      <div class="hero-cta animate-in">
+        <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80" alt="Minimalist living room with natural light">
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title">Designing Dreams,<br>One Space at a Time</h2>
+          <p>With over a decade of experience, we specialize in creating minimalist interiors that balance functionality with beauty. Our approach is rooted in the belief that less is always more.</p>
+          <p>Every project begins with understanding your vision. We blend natural materials, thoughtful lighting, and clean lines to craft spaces that feel both timeless and personal.</p>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number" data-target="12">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="350">0</span>
+              <span class="stat-label">Projects Done</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="98">0</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">A curated selection of our favorite transformations.</p>
+      </div>
+      <div class="filter-buttons reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="living">Living Room</button>
+        <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item reveal" data-category="living">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Modern living room design">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Modern Living Room</h3>
+                <p>Minimalist elegance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal" data-category="bedroom">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80" alt="Serene bedroom design">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Serene Bedroom</h3>
+                <p>Calm & cozy retreat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal" data-category="kitchen">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Minimalist kitchen design">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Minimalist Kitchen</h3>
+                <p>Clean & functional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal" data-category="living">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Elegant living room">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Elegant Living Room</h3>
+                <p>Sophisticated design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal" data-category="bedroom">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80" alt="Master bedroom">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Master Bedroom</h3>
+                <p>Luxury meets comfort</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal" data-category="kitchen">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80" alt="Modern kitchen">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Modern Kitchen</h3>
+                <p>Sleek & practical</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Our Services</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3>Interior Design</h3>
+          <p>Full-spectrum interior design services tailored to your aesthetic and functional needs.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+          </div>
+          <h3>Space Planning</h3>
+          <p>Optimized layouts that maximize every square foot while maintaining flow and harmony.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+          </div>
+          <h3>Lighting Design</h3>
+          <p>Strategic lighting solutions that create ambiance and highlight architectural features.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3>Furniture Curation</h3>
+          <p>Handpicked pieces that blend seamlessly with your space and personal style.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-slider reveal">
+        <div class="testimonial-card active">
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p>"They transformed our outdated living room into a sanctuary of calm. Every detail was thoughtfully considered and beautifully executed."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sarah Johnson">
+            </div>
+            <div>
+              <strong>Sarah Johnson</strong>
+              <span>Homeowner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p>"Professional, creative, and incredibly attentive to our needs. Our bedroom feels like a luxury hotel suite. Highly recommend their services."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Michael Chen">
+            </div>
+            <div>
+              <strong>Michael Chen</strong>
+              <span>Architect</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p>"From concept to completion, the team was exceptional. Our minimalist kitchen is now the heart of our home. A truly transformative experience."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Emily Rodriguez">
+            </div>
+            <div>
+              <strong>Emily Rodriguez</strong>
+              <span>Interior Designer</span>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Create<br>Something Beautiful</h2>
+          <p>Ready to transform your space? Reach out and let's bring your vision to life.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>123 Design Street, Creative City</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>hello@interiorstudio.com</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              <span>+1 (555) 123-4567</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">Interior<span>Studio</span></a>
+          <p>Creating harmonious spaces for modern living.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="18" cy="6" r="1"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 16c.5-2 1-3.5 2-4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Houzz">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="4" y="2" width="16" height="20" rx="2"/>
+                <line x1="12" y1="2" x2="12" y2="22"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Interior Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
